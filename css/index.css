@@ -1,0 +1,105 @@
+
+:root {
+  --white: #fffffe; 
+  --black: #333333;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background-image: url('/images/fondo-pantalla.jpg');
+}
+
+.layout {
+  display: flex;
+  inline-size: 100vw;
+  block-size: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid red; */
+}
+
+.contador {
+  inline-size: 50rem;
+  block-size: 17.81rem;
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+
+.tiempo {
+  display: flex;
+  inline-size: 11.37rem;
+  block-size: 13.37rem;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  background: #1A1A1A;
+  border-radius: 16px;
+  margin-block-end: 1.5rem;
+}
+
+.tiempo span {
+  font-size: 128px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.mini-contenedor {
+  display: block;
+}
+
+.dias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dias p {
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--white);
+  margin: 0;
+}
+
+
+@media screen and (max-width: 414px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .layout {
+    display: flex;
+    justify-content: center;
+    inline-size: 100%; 
+    max-inline-size: 360px;
+    block-size: 100vh;
+  }
+
+  .contador {
+    inline-size: 15.93rem;
+    block-size: 5.61rem;
+    margin-inline: 3.31rem; 
+  }
+
+  .mini-contenedor {
+    width: 58px;
+  }
+
+  .tiempo {
+    inline-size: 3.62rem;
+    block-size: 4.26rem;
+  }
+
+  .tiempo span {
+    font-size: 47.81px;
+  }
+  
+  .dias p {
+    font-size: 12px;
+  }
+
+}

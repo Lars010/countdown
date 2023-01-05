@@ -103,3 +103,41 @@ body {
   }
 
 }
+
+@media (max-width:801px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .layout {
+    display: flex;
+    justify-content: center;
+    inline-size: 100%; 
+    max-inline-size: 360px;
+    block-size: 100vh;
+  }
+
+  .contador {
+    inline-size: 15.93rem;
+    block-size: 5.61rem;
+    margin-inline: 3.31rem; 
+  }
+
+  .mini-contenedor {
+    width: 58px;
+  }
+
+  .tiempo {
+    inline-size: 3.62rem;
+    block-size: 4.26rem;
+  }
+
+  .tiempo span {
+    font-size: 47.81px;
+  }
+  
+  .dias p {
+    font-size: 12px;
+  }
+}
